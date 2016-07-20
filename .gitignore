@@ -1,0 +1,20 @@
+# Directories #
+*build/
+*bin/
+*.gradle  
+*.class
+ 
+# Package Files #
+*.jar
+*.war
+*.ear
+*.db
+  
+# Eclipse #
+ 
+.recommenders
+.metadata
+*.settings
+*.classpath
+*.project
+

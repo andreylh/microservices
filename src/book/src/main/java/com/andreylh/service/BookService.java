@@ -17,17 +17,17 @@ import org.springframework.stereotype.Component;
 @Produces(MediaType.APPLICATION_JSON)
 public class BookService {
 	
-	private List<String> books = Arrays.asList("Lord of the Rings", "Game Of Thrones", "Harry Potter");
+	private static final List<String> BOOKS = Arrays.asList("Lord of the Rings", "Game Of Thrones", "Harry Potter");
 
 	@GET	
 	public List<String> getAll() {
-		return books;
+		return BOOKS;
 	}
 	
 	@GET
 	@Path("search")
 	public List<String> search(@QueryParam("q") String q) {
-		return books.stream().filter(b -> b.contains(q)).collect(Collectors.toList());
+		return BOOKS.stream().filter(b -> b.contains(q)).collect(Collectors.toList());
 	}
 	
 }
