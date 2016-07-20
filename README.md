@@ -1,4 +1,6 @@
 # microservices
-Project for testing microservices archtecture. Frameworks used:
-* SpringBoot
-* Netflix Zuul
+Project for testing microservices archtecture. 
+
+Frameworks used:
+* SpringBoot;
+* Netflix Zuul.
